@@ -1,0 +1,12 @@
+{% extends '_base.html' %}
+{% block main_contents %}
+  <span id='hour'>
+    <img src="{{ url_for('static', filename=hour) }}">
+  </span>
+
+  <img src="{{ url_for('static', filename='img/split.png') }}">
+
+  <span id='minute'>
+    <img src="{{ url_for('static', filename=minute) }}">
+  </span>
+{% endblock %}

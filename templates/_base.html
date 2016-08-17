@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>
+      Clock
+    </title>
+  </head>
+  <body>
+    {% block main_contents %}
+    {% endblock %}
+
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+  </body>
+</html>
