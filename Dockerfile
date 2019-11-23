@@ -2,8 +2,7 @@ FROM python:3.5.2-alpine
 
 RUN apk update
 RUN apk add vim git
-RUN apt-get update && apt-get install -y \
-    default-jdk \
+RUN apk add --update openjdk8
 RUN pip install --upgrade pip
 
 ADD requirements.txt /tmp
