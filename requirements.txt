@@ -8,7 +8,7 @@ python-engineio==0.9.2
 python-socketio==1.4.4
 pytz==2016.6.1
 six==1.10.0
-Werkzeug==0.11.10
+Werkzeug==0.15.3
 keras
 Pillow
 numpy
