@@ -3,7 +3,7 @@ FROM python:3.5.2-alpine
 RUN apk update
 RUN apk add vim git
 RUN apk add --update openjdk8
-RUN apk add musl-dev gcc make g++ file
+RUN apk add musl-dev gcc make g++ file build-base wget freetype-dev libpng-dev openblas-dev
 
 RUN pip install --upgrade pip
 
