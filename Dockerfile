@@ -7,7 +7,7 @@ ADD requirements.txt /tmp
 RUN pip install -r /tmp/requirements.txt
 
 WORKDIR /web
-RUN git clone https://github.com/nanakenashi/image_clock.git clock
+RUN git clone https://github.com/fumitrial8/himeno-app.git clock
 
 ENV FLASK_APP /web/clock/app.py
 CMD flask run -h 0.0.0.0 -p $PORT
