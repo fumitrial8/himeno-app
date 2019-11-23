@@ -3,7 +3,7 @@ FROM python:3.5.2-alpine
 RUN apk update
 RUN apk add vim git
 RUN apk add --update openjdk8
-RUN apk add musl-dev gcc make g++ file build-base wget freetype-dev libpng-dev world[openblas-dev]
+RUN apk add musl-dev gcc make g++ file build-base wget freetype-dev libpng-dev
 RUN cd /tmp \
     && wget http://www.netlib.org/lapack/lapack-3.8.0.tar.gz \
     && tar zxf lapack-3.8.0.tar.gz \
